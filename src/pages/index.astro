@@ -1,11 +1,31 @@
 ---
+import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		portfolio
+		<section class="w-full mx-auto lg:w-[740px]  py-44">
+			<div class="flex gap-4 items-center">
+					<img class="rounded-full w-20 h-20 mb-4" src="https://i.pinimg.com/474x/bf/79/50/bf7950770f6cb14bd8ac5fdf0b94feba.jpg" alt="jenny photo"><a 
+			href="https://github.com/jennywfo"
+			target="_blank"
+			rel="noopener"
+			class="text-xl opacity-85">@jennywfo</a>
+			</div>
+		
+		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10"><span class="text-purple-400">Hey,</span> soy jenny
+			<a
+			href="https://www.linkedin.com/in/jenny-da-silva-77122a264/"
+			target="_blank"
+			rel="noopener"
+
+			 class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></a></h1>
+		<h2 class="text-2xl opacity-80 text-wrap">+1 año de experiencia. <span class="text-green-200">Desalloradora Web y Aplicaciones.</span> Especializada en crear aplicaciones ùnicas. Ordino, Andorra</h2>
+
+
+		</section>
 	</main>
 </Layout>
 
